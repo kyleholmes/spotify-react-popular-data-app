@@ -8,3 +8,5 @@
 5. **Run the app.** - `npm start -s`
 This will automatically run the build, start up a webserver, and open the application in your default browser. 
 Note: The -s flag is optional. It just makes the console display less during the build.
+
+![Screenshot](screenshot.JPG?raw=true "Screenshot")
