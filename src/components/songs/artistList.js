@@ -42,7 +42,7 @@ const ArtistList = ({artists}) => {
 	}
 	else if (avgPop > 40){
 		hipsterLevel = 8;
-		hipsterLevelText = 'Dave Franco wearing a beanie in "Easy"';
+		hipsterLevelText = 'you conform to no trend. you are a hipster god';
 	}
 	else if (avgPop > 0) {
 		hipsterLevel = 8;
