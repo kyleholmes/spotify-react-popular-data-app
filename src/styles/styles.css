@@ -1,0 +1,61 @@
+a.active {
+	color:orange;
+}
+
+span {
+	color:green;
+}
+
+#homeHipster {
+	color: magenta !important;
+}
+
+#switch{
+	font-size: 12px !important;
+	padding-bottom: 10px !important;
+}
+
+.jumbotron {
+	background-color: #00CF7F !important;
+}
+
+#access, #about {
+	width:70%;
+	margin: 40px 0px 0px 40px;
+}
+
+#hipster>span{
+	font-weight: bolder;
+}
+
+#level1 {
+	color: #00CED1;
+}
+#level2 {
+	color: #32CD32;
+}
+#level3 {
+	color: #9ACD32;
+}
+#level4 {
+	color: #FFD700;
+}
+#level5 {
+	color: #FF8C00;
+}
+#level6 {
+	color: #FF6347;
+}
+#level7 {
+	color: #DC143C;
+}
+#level8 {
+	color: #8B0000;
+}
+#level9 {
+	color: red;
+}
+
+.hidden {
+	display: none;
+}
