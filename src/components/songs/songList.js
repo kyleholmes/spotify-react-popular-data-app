@@ -25,16 +25,20 @@ const SongList = ({songs}) => {
 		hipsterLevel = 4;
 		hipsterLevelText = 'favorite genre: post-industrial psychodelic alternative grunge poetry';
 	}
-	else if (avgPop > 40){
+	else if (avgPop > 45){
 		hipsterLevel = 5;
 		hipsterLevelText = 'thinks Nuetral Milk Hotel is the most revolutionary band of the past millenium';
 	}
-	else if (avgPop > 20){
+	else if (avgPop > 40){
 		hipsterLevel = 6;
+		hipsterLevelText = 'finds pleasure in telling others their favorite band is "soOoooOoOOO cliché"';
+	}
+	else if (avgPop > 20){
+		hipsterLevel = 7;
 		hipsterLevelText = 'Dave Franco wearing a beanie';
 	}
 	else if (avgPop > 0){
-		hipsterLevel = 7;
+		hipsterLevel = 8;
 		hipsterLevelText = 'who is this and how did you get here';
 	}
 	else {

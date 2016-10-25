@@ -23,10 +23,14 @@ class Data extends React.Component{
 		const artists = this.props.artists.artists.items;
 		return (
 			<div>
-				<h1>Songs</h1>
-				<SongList songs={songs} />
-				<h1>Artists</h1>
-				<ArtistList artists={artists} />
+				<div id="table1">
+					<h1>Songs</h1>
+					<SongList songs={songs} />
+				</div>
+				<div id="table2">
+					<h1>Artists</h1>
+					<ArtistList artists={artists} />
+				</div>
 			</div>
 		);
 	}

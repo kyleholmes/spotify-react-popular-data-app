@@ -24,6 +24,13 @@ span {
 	margin: 40px 0px 0px 40px;
 }
 
+#table1 {
+	float:left;
+}
+#table2 {
+	float:right;
+}
+
 #hipster>span{
 	font-weight: bolder;
 }

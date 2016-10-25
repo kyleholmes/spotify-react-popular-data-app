@@ -28,19 +28,19 @@ const ArtistList = ({artists}) => {
 		hipsterLevel = 4;
 		hipsterLevelText = 'tells you their favorite genre is alternative. loves avicii\'s new stuff';
 	}
-	else if (avgPop > 65){
+	else if (avgPop > 60){
 		hipsterLevel = 5;
 		hipsterLevelText = 'knows 25 different cheeses and their appropriate wine pairings';
 	}
-	else if (avgPop > 60){
+	else if (avgPop > 50){
 		hipsterLevel = 6;
 		hipsterLevelText = 'constantly suggests you donate to the National Gallery of Art, never once done it themselves';
 	}
-	else if (avgPop > 50){
+	else if (avgPop > 45){
 		hipsterLevel = 7;
 		hipsterLevelText = 'only smokes cigarettes ironically';
 	}
-	else if (avgPop > 40){
+	else if (avgPop > 30){
 		hipsterLevel = 8;
 		hipsterLevelText = 'you conform to no trend. you are a hipster god';
 	}
