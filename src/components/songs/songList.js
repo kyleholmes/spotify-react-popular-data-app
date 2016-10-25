@@ -23,11 +23,11 @@ const SongList = ({songs}) => {
 	}
 	else if (avgPop > 50){
 		hipsterLevel = 4;
-		hipsterLevelText = 'nails first stanza of Float On, mysteriuosly dissapears for rest of song';
+		hipsterLevelText = 'favorite genre: post-industrial psychodelic alternative grunge poetry';
 	}
 	else if (avgPop > 40){
 		hipsterLevel = 5;
-		hipsterLevelText = 'might know 1 or 2 Pavement songs';
+		hipsterLevelText = 'thinks Nuetral Milk Hotel is the most revolutionary band of the past millenium';
 	}
 	else if (avgPop > 20){
 		hipsterLevel = 6;
