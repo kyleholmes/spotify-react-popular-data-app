@@ -17,7 +17,7 @@ export function getSongData() {
 		dispatch({ 
 			type: 'SPOTIFY_SONGS_BEGIN'
 		});
-		SpotifyApi.getMyTopTracks({limit: 50, time_range: 'short_term'}).then(data => {
+		SpotifyApi.getMyTopTracks({limit: 50}).then(data => {
 			dispatch({
 				type: 'SPOTIFY_SONGS_SUCCESS', 
 				data

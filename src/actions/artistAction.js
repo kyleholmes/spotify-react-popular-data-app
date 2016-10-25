@@ -17,7 +17,7 @@ export function getArtistData() {
 		dispatch({ 
 			type: 'SPOTIFY_ARTISTS_BEGIN'
 		});
-		SpotifyApi.getMyTopArtists({limit: 30, time_range: 'short_term'}).then(data => {
+		SpotifyApi.getMyTopArtists({limit: 25}).then(data => {
 			dispatch({
 				type: 'SPOTIFY_ARTISTS_SUCCESS', 
 				data
