@@ -8,7 +8,7 @@ const SongList = ({songs}) => {
 	songs.map((song) => {
 		totalPop+= song.popularity;
 		});
-	let avgPop = Math.floor(totalPop / 50);
+	let avgPop = Math.floor(totalPop / songs.length);
 	if (avgPop > 80){
 		hipsterLevel = 1;
 		hipsterLevelText = 'frequent radio listener';

@@ -17,7 +17,7 @@ export function getArtistData() {
 		dispatch({ 
 			type: 'SPOTIFY_ARTISTS_BEGIN'
 		});
-		SpotifyApi.getMyTopArtists({limit: 25}).then(data => {
+		SpotifyApi.getMyTopArtists({limit: 35}).then(data => {
 			dispatch({
 				type: 'SPOTIFY_ARTISTS_SUCCESS', 
 				data

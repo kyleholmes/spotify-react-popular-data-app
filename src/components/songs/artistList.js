@@ -10,8 +10,8 @@ const ArtistList = ({artists}) => {
 		totalPop+= artist.popularity;
 		totalFollows+= artist.followers.total;
 		});
-	let avgPop = Math.floor(totalPop / 25);
-	let avgFollows = Math.floor(totalFollows / 25);
+	let avgPop = Math.floor(totalPop / artists.length);
+	let avgFollows = Math.floor(totalFollows / artists.length);
 	if (avgPop > 90){
 		hipsterLevel = 1;
 		hipsterLevelText = '"Ugh they neeeeed to put Taylor Swift on Spotify"';
