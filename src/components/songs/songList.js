@@ -5,8 +5,10 @@ const SongList = ({songs}) => {
 	let hipsterLevel = 0;
 	let hipsterLevelText = '';
 	let hipsterLink = '';
+	let playlistBuilder = "";
 	songs.map((song) => {
 		totalPop+= song.popularity;
+		playlistBuilder+= song.id+",";
 		});
 	let avgPop = Math.floor(totalPop / songs.length);
 	if (avgPop > 80){
@@ -64,13 +66,15 @@ const SongList = ({songs}) => {
 				{songs.map((song) => (
 					<tr key={song.id}>
 						<td>&nbsp;</td>
-						<td><a href={song.external_urls.spotify}>{song.name}</a></td>
+						<td><a href={song.external_urls.spotify}>{song.name} </a><a href={song.preview_url} target="_blank"><span className="glyphicon glyphicon-play-circle"></span></a></td>
 						<td>{song.artists[0].name}</td>
 						<td>{song.popularity}</td>
 					</tr>
 				))}
 				</tbody>
 			</table>
+			<p><span id={'level'+hipsterLevel}>Top tracks playlist:</span></p>
+			<iframe src={"https://embed.spotify.com/?uri=spotify:trackset:TOPTRACKS:" + playlistBuilder} width="400" height= "480" frameBorder="0" allowTransparency="true"></iframe>
 		</div>
 		);
 };

@@ -1,9 +1,4 @@
 export default {
-	request: {
-		accessToken: null,
-		refreshToken: null,
-		choice: null
-	},
 	artist: {
 		accessToken: null,
 		refreshToken: null,

@@ -2,10 +2,6 @@ a.active {
 	color:orange;
 }
 
-span {
-	color:green;
-}
-
 #homeHipster {
 	color: magenta !important;
 }
@@ -26,9 +22,11 @@ span {
 
 #table1 {
 	float:left;
+	width: 48%;
 }
 #table2 {
 	float:right;
+	width: 48%;
 }
 
 #hipster>span{

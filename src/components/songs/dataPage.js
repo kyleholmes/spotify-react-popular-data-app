@@ -9,8 +9,9 @@ import ArtistList from './artistList';
 class Data extends React.Component{
 
 	componentDidMount() {
+		const uri = document.location.href.toString();
+		const accessToken = uri.substring(uri.indexOf("token=") + 6, uri.indexOf("&token"));
 		const {dispatch, params} = this.props;
-		const accessToken = this.props.request.request.accessToken;
 		const refreshToken = 'hi';
 		dispatch(setSongTokens({accessToken, refreshToken}));
 		dispatch(getSongData());
