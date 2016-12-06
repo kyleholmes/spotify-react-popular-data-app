@@ -5,6 +5,8 @@ import {setSongTokens, getSongData} from '../../actions/songAction';
 import SongList from './songList';
 import {setArtistTokens, getArtistData} from '../../actions/artistAction';
 import ArtistList from './artistList';
+import SelectInput from '../common/selectInput';
+import { autobind } from 'core-decorators';
 
 class Data extends React.Component{
 
@@ -14,9 +16,21 @@ class Data extends React.Component{
 		const {dispatch, params} = this.props;
 		const refreshToken = 'hi';
 		dispatch(setSongTokens({accessToken, refreshToken}));
-		dispatch(getSongData());
+		dispatch(getSongData('medium_term'));
 		dispatch(setArtistTokens({accessToken, refreshToken}));
-		dispatch(getArtistData());
+		dispatch(getArtistData('medium_term'));
+	}
+
+	@autobind
+	changeSongTerm(event) {
+		const {dispatch, params} = this.props;
+		dispatch(getSongData(event.target.value));
+	}
+
+	@autobind
+	changeArtistTerm(event) {
+		const {dispatch, params} = this.props;
+		dispatch(getArtistData(event.target.value));
 	}
 
 	render() {
@@ -26,10 +40,12 @@ class Data extends React.Component{
 			<div>
 				<div id="table1">
 					<h1>Songs</h1>
+					<SelectInput name="timeRange" label="Time Range" value={this.props.songs.songs.timeRange} onChange={this.changeSongTerm}/>
 					<SongList songs={songs} />
 				</div>
 				<div id="table2">
 					<h1>Artists</h1>
+					<SelectInput name="timeRange" label="Time Range" value={this.props.artists.artists.timeRange} onChange={this.changeArtistTerm}/>
 					<ArtistList artists={artists} />
 				</div>
 			</div>

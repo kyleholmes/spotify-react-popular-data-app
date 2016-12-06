@@ -1,14 +1,39 @@
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+}
+
+form {
+	padding-bottom:20px;
+}
+
+table {
+    counter-reset: rowNumber;
+}
+
+table tr.data {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
 a.active {
 	color:orange;
 }
 
-#homeHipster {
-	color: magenta !important;
+.list-hyperlink {
+	color: #483D8B;
 }
 
-#switch{
-	font-size: 12px !important;
-	padding-bottom: 10px !important;
+.smaller {
+	font-size: 70% !important;
+}
+
+#homeHipster {
+	color: magenta !important;
 }
 
 .jumbotron {
@@ -61,6 +86,49 @@ a.active {
 	color: red;
 }
 
+#backgroundlevel1 {
+	background-color: rgb(0,206,209);
+}
+#backgroundlevel2 {
+	background-color: rgb(50,205,50);
+}
+#backgroundlevel3 {
+	background-color: rgb(154,205,50);
+}
+#backgroundlevel4 {
+	background-color: rgb(255,215,0);
+}
+#backgroundlevel5 {
+	background-color: rgb(255,140,0);
+}
+#backgroundlevel6 {
+	background-color: rgb(255,99,71);
+}
+#backgroundlevel7 {
+	background-color: rgb(220,20,60);
+}
+#backgroundlevel8 {
+	background-color: rgb(180,0,0);
+}
+#backgroundlevel9 {
+	background-color: rgb(255,0,0);
+}
+
 .hidden {
 	display: none;
+}
+
+#playlist {
+	position: fixed;
+	bottom: -60px;
+	right: 20px;
+}
+
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th,
+.table-borderless thead tr td,
+.table-borderless tfoot tr th,
+.table-borderless tfoot tr td {
+    border: none;
 }

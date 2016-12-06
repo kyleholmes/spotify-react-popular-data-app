@@ -12,12 +12,12 @@ export function setArtistTokens({accessToken, refreshToken}) {
 	};
 }
 
-export function getArtistData() {
+export function getArtistData(range) {
 	return function(dispatch) {
 		dispatch({ 
 			type: 'SPOTIFY_ARTISTS_BEGIN'
 		});
-		SpotifyApi.getMyTopArtists({limit: 35}).then(data => {
+		SpotifyApi.getMyTopArtists({limit: 35, time_range: range}).then(data => {
 			dispatch({
 				type: 'SPOTIFY_ARTISTS_SUCCESS', 
 				data

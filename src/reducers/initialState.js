@@ -1,5 +1,6 @@
 export default {
 	artist: {
+		timeRange: null,
 		accessToken: null,
 		refreshToken: null,
 		artists: {
@@ -8,6 +9,7 @@ export default {
 		}
 	},
 	song: {
+		timeRange: null,
 		accessToken: null,
 		refreshToken: null,
 		songs: {
