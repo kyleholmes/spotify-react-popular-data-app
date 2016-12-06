@@ -32,6 +32,22 @@ a.active {
 	font-size: 70% !important;
 }
 
+#colorReference {
+	position:absolute;
+	top: 1%;
+	left: 45%;
+	text-align: center;
+}
+#spectrum {
+	margin-bottom: -3%;
+    height: 15px;
+    width: 150px;
+    background: -webkit-linear-gradient(left, #00CED1, #32CD32, #9ACD32, #FFD700, #FF8C00, #FF6347, #DC143C, #8B0000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #00CED1, #32CD32, #9ACD32, #FFD700, #FF8C00, #FF6347, #DC143C, #8B0000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #00CED1, #32CD32, #9ACD32, #FFD700, #FF8C00, #FF6347, #DC143C, #8B0000); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, #00CED1, #32CD32, #9ACD32, #FFD700, #FF8C00, #FF6347, #DC143C, #8B0000 ); /* Standard syntax (must be last) */
+}
+
 #homeHipster {
 	color: magenta !important;
 }
@@ -46,10 +62,12 @@ a.active {
 }
 
 #table1 {
+	padding-top:20px;
 	float:left;
 	width: 48%;
 }
 #table2 {
+	padding-top:20px;
 	float:right;
 	width: 48%;
 }

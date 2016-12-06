@@ -11,7 +11,6 @@ const SongList = ({songs}) => {
 		playlistBuilder+= song.id+",";
 		});
 	hipsterLevel = 9-(Math.floor(totalPop / songs.length)/10); //Math.floor(totalPop / songs.length) is average popularity
-	console.log(hipsterLevel);
 	if (hipsterLevel <= 1){
 		hipsterLevelText = 'frequent radio listener';
 	}

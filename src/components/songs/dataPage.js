@@ -48,6 +48,10 @@ class Data extends React.Component{
 					<SelectInput name="timeRange" label="Time Range" value={this.props.artists.artists.timeRange} onChange={this.changeArtistTerm}/>
 					<ArtistList artists={artists} />
 				</div>
+				<div id="colorReference">
+					<div id="spectrum"></div>
+					<span className="smaller">Mainstream&nbsp;</span>&rarr;<span className="smaller">&nbsp;Hipster</span>
+				</div>
 			</div>
 		);
 	}
