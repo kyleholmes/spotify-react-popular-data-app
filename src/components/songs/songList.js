@@ -5,10 +5,10 @@ const SongList = ({songs}) => {
 	let hipsterLevel = 0;
 	let hipsterLevelText = '';
 	let hipsterLink = '';
-	let playlistBuilder = "";
+	let songIds = "";
 	songs.map((song) => {
 		totalPop+= song.popularity;
-		playlistBuilder+= song.id+",";
+		songIds+= song.id+",";
 		});
 	hipsterLevel = 9-(Math.floor(totalPop / songs.length)/10); //Math.floor(totalPop / songs.length) is average popularity
 	if (hipsterLevel <= 1){
@@ -66,7 +66,7 @@ const SongList = ({songs}) => {
 			</table>
 			<div id="playlist">
 				{/*<p><span id={'level'+hipsterLevel}>Top tracks playlist:</span></p>*/}
-				<iframe src={"https://embed.spotify.com/?uri=spotify:trackset:TOPTRACKS:" + playlistBuilder} frameBorder="0" allowTransparency="true"></iframe>
+				<iframe src={"https://embed.spotify.com/?uri=spotify:trackset:TOPTRACKS:" + songIds} frameBorder="0" allowTransparency="true"></iframe>
 			</div>
 		</div>
 		);

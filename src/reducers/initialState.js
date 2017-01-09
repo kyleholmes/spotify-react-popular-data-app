@@ -16,5 +16,8 @@ export default {
 			loading: false,
 			items: []
 		}
+	},
+	trackData: {
+		audio_features: []
 	}
 };
